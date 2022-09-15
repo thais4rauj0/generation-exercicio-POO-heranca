@@ -1,18 +1,14 @@
 package exercicio;
 
-public class Animal {
+public abstract class Animal {
 	
 	private String nome;
 	private int idade;
-	private String som;
-	private String acao;
 	
-	public Animal(String nome, int idade, String som, String acao) {
+	public Animal(String nome, int idade) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
-		this.som = som;
-		this.acao = acao;
 	}
 
 	public Animal() {
@@ -21,10 +17,9 @@ public class Animal {
 	
 	//Método emitir Som
 	
-	public String EmiteSom() {
-		String somEmitido = som;
-		return somEmitido;
-	}
+	public abstract String emiteSom(String somEmitido);
+	
+	public abstract String acao(String acao);
 
 	public String getNome() {
 		return nome;
@@ -42,20 +37,8 @@ public class Animal {
 		this.idade = idade;
 	}
 
-	public String getSom() {
-		return som;
-	}
-
-	public void setSom(String som) {
-		this.som = som;
-	}
-
-	public String getAcao() {
-		return acao;
-	}
-
-	public void setAcao(String acao) {
-		this.acao = acao;
-	}
 	
+
 }
+	
+

@@ -7,15 +7,24 @@ public class Preguica extends Animal{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Preguica(String nome, int idade, String som, String acao) {
-		super(nome, idade, som, acao);
+	public Preguica(String nome, int idade) {
+		super(nome, idade);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public String toString() {
-		return "\n------ Preguica -----\n \nSom emitido:" + EmiteSom() + "\nNome: " + getNome() + "\nIdade:" + getIdade()
-				+ "\nA preguiça " + getAcao();
+	public String emiteSom(String somEmitido) {
+		// TODO Auto-generated method stub
+		String som = "Aaaaah Aaaah";
+		return som;
+	}
+
+	@Override
+	public String acao(String acao) {
+		// TODO Auto-generated method stub
+		
+		String acaoAnimal = "Deve subir em árvores";
+		return acaoAnimal;
 	}
 	
 	

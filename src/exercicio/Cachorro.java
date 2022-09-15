@@ -7,15 +7,25 @@ public class Cachorro extends Animal{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Cachorro(String nome, int idade, String som, String acao) {
-		super(nome, idade, som, acao);
+	public Cachorro(String nome, int idade) {
+		super(nome, idade);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public String toString() {
-		return "\n----- Cachorro ------- \nSom Emitido: " + EmiteSom() + "\nNome: " + getNome() + "\nIdade:" + getIdade()
-				+  "\nO cachorro " + getAcao();
+	public String emiteSom(String somEmitido) {
+		// TODO Auto-generated method stub
+		
+		String som = "Au au au";
+		return som;
+	}
+
+	@Override
+	public String acao(String acao) {
+		// TODO Auto-generated method stub
+		String acaoAnimal = "Deve correr";
+		return acaoAnimal;
+		
 	}
 	
 	
